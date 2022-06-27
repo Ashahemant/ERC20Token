@@ -1,0 +1,153 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xF179d57CAcb78847cc96E1dE62216EFa7Fb6404a",
+    "txHash": "0x3b438bbfd761ca1b1737f9e51eea9138292f464ef9fad49871b97fe156a5d7c2"
+  },
+  "proxies": [
+    {
+      "address": "0x9fA9275b92Db3f82FE9C55Dc0f1F71b83Ac44B58",
+      "txHash": "0x5155e90add4258805e91ba5b6ded554b09211b13139ae48e254c73976a37bac9",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x81d9C1183e0ab155C9551B0181628D41bA2dB299",
+      "txHash": "0x26ae43b2e73359de965f7d3edc5d4021aa399e088d8686a9cbcd310c458e120a",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "148c80193e0ec13af72c10e5a0177a7755cf54041d49d9d779476fd6d0438a46": {
+      "address": "0x395d4eD99020Ff7350E498A054D4cC3125494fC8",
+      "txHash": "0xf8fb700f4383968cc0c411aeca332867c892bc155a54a83facafb864dd69071a",
+      "layout": {
+        "storage": [
+          {
+            "label": "balances",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:14"
+          },
+          {
+            "label": "allowed",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:16"
+          },
+          {
+            "label": "totalSupply_",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:18"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "b4172414c70f83d7cdb4d782e55373fde4ae332e2150a41b2666d80642d1df0d": {
+      "address": "0x543d53779575658c97DdCA8a2d3279883fCc70fe",
+      "txHash": "0xf93b66a96ec2fc472f9e28a8a6c62ef590a49ef8e02921a30338f193fcad6ab4",
+      "layout": {
+        "storage": [
+          {
+            "label": "name",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_string_storage",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:10"
+          },
+          {
+            "label": "symbol",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_string_storage",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:11"
+          },
+          {
+            "label": "decimals",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint8",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:12"
+          },
+          {
+            "label": "balances",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:13"
+          },
+          {
+            "label": "allowed",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:15"
+          },
+          {
+            "label": "totalSupply_",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "ERC20Basic",
+            "src": "contracts\\ERC20Basic.sol:17"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
